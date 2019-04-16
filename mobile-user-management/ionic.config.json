@@ -1,0 +1,7 @@
+{
+  "name": "mobile-user-management",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

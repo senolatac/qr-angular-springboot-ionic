@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      User List
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <div *ngFor="let item of userList">
+    <ion-item (click)="detail(item)">
+      <ion-icon name="person" slot="start"></ion-icon>
+      {{item.name}}
+      <div class="item-note" slot="end">
+        {{item.username}}
+      </div>
+    </ion-item>
+    </div>
+  </ion-list>
+</ion-content>

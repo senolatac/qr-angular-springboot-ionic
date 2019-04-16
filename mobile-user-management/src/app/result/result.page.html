@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Result
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <ion-img src="/assets/shapes.svg"></ion-img>
+      <ion-card-header>
+        <ion-card-subtitle>Game Over</ion-card-subtitle>
+        <ion-card-title>Mission is completed.</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Now, you can go on with qr code login...</p>
+        <p *ngIf="sessionId">Token was taken and sent.</p>
+        <p *ngIf="!sessionId">Token could not be taken and sent.</p>
+      </ion-card-content>
+    </ion-card>
+</ion-content>

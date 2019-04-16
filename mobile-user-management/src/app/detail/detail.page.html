@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+    </ion-buttons>    
+    <ion-title>User Detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <ion-img src="/assets/shapes.svg"></ion-img>
+      <ion-card-header>
+        <ion-card-title>User detail is: {{currentUser.name}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Now, you can go on with your details...</p>
+        <p><strong>{{userId}}</strong></p>
+      </ion-card-content>
+    </ion-card>
+</ion-content>
