@@ -11,7 +11,8 @@ The application structure is as follows.
 
 ```
 $ cd server-user-management
-$ gradlew clean build
+$ gradlew bootJar
+$ gradlew bootRun
 ```
 
 ### Access server side using following URL
